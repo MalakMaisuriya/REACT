@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #00b3ff25, #000000, #350000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-box {
+  margin: 20px 0;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.search-box input:focus {
+  outline: none;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.8s ease;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #444;
+  color: white;
+  transition: background-color 0.8s ease, transform 0.6s ease, box-shadow 0.8s ease;
+}
+
+.search-box button:hover {
+  background-color: #555;
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  width: 320px;
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.7);
+}
+
+.card img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.08);
+  box-shadow:0 0 15px rgb(to right, #00b3ff25, #000000, #350000);
+}
+
+.created {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.stats div {
+  text-align: center;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-btn {
+  margin-top: 15px;
+  background-color: #444;
+  color: white;
+  transition: all 0.6s ease;
+}
+
+.download-btn:hover {
+  background-color: #2e8b57;
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(46, 139, 87, 0.4);
+}
+
+.error {
+  color: red;
+}
+
+.download-card {
+  display: none;
+  position: absolute;
+  left: -9999px;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+  }
+
+  .search-box input {
+    width: 180px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
