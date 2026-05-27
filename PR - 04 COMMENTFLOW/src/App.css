@@ -1,0 +1,20 @@
+.insta-bg{
+height:100vh;
+background: linear-gradient(45deg,#fd5949,#d6249f,#285AEB);
+}
+
+.phone-frame{
+width:350px;
+background:white;
+border-radius:20px;
+overflow:hidden;
+}
+
+.logo{
+font-family: cursive;
+}
+
+.bottom-nav i{
+font-size:20px;
+cursor:pointer;
+}
