@@ -1,0 +1,55 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Setup React Project Structure 🚀",
+      "description": "Initialize a new React project with Vite, configure ESLint, and set up the folder structure for components, hooks, and utils.",
+      "dueDate": "2026-06-10",
+      "priority": "High",
+      "category": "Work",
+      "status": "In Progress",
+      "createdAt": "2026-05-22T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "title": "Fix TypeScript Type Errors 🐛",
+      "description": "Review and fix all TypeScript compilation errors in the codebase. Ensure proper type definitions for props and state.",
+      "dueDate": "2026-06-07",
+      "priority": "High",
+      "category": "Work",
+      "status": "Completed",
+      "createdAt": "2026-05-22T11:30:00.000Z"
+    },
+    {
+      "id": "3",
+      "title": "Implement REST API Integration 🔌",
+      "description": "Create service layer for API calls, set up axios interceptors, and implement error handling for all endpoints.",
+      "dueDate": "2026-06-05",
+      "priority": "High",
+      "category": "Work",
+      "status": "Completed",
+      "createdAt": "2026-05-22T08:15:00.000Z"
+    },
+    {
+      "id": "4",
+      "title": "Write Unit Tests 💻",
+      "description": "Write Jest and React Testing Library tests for 80% code coverage. Focus on components, hooks, and utility functions.",
+      "dueDate": "2026-06-06",
+      "priority": "Medium",
+      "category": "Work",
+      "status": "Completed",
+      "createdAt": "2026-05-22T14:00:00.000Z"
+    },
+    {
+      "id": "5xEB_d4D2J8",
+      "title": "Optimize Bundle Size & Performance ⚡",
+      "description": "Analyze webpack bundle, implement code splitting, lazy loading, and optimize image assets for production.",
+      "dueDate": "2026-06-08",
+      "priority": "Medium",
+      "category": "Work",
+      "status": "Pending",
+      "createdAt": "2026-05-22T15:46:43.629Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
