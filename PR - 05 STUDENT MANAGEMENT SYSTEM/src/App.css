@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #982598 #F1E9E9;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #15173D, #982598);
+  min-height: 100vh;
+}
+
+.container {
+  width: 88%;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: rgba(241, 233, 233, 0.95);
+  padding: 28px;
+  border-radius: 22px;
+  box-shadow: 0 20px 45px rgba(21, 23, 61, 0.35);
+  backdrop-filter: blur(8px);
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #15173D;
+}
+
+h1 {
+  font-size: 32px;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.form {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.form input,
+.form select {
+  flex: 1;
+  min-width: 220px;
+  padding: 14px 16px;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #15173D;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form input::placeholder {
+  color: #8b8ba7;
+}
+
+.form input:focus,
+.form select:focus {
+  border-color: #E491C9;
+  box-shadow: 0 0 0 4px rgba(228, 145, 201, 0.25);
+}
+
+.form button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #15173D, #982598);
+  color: #F1E9E9;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(152, 37, 152, 0.28);
+}
+
+.list-container {
+  margin-top: 28px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(21, 23, 61, 0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+table th {
+  background: linear-gradient(135deg, #15173D, #982598);
+  color: #F1E9E9;
+  padding: 14px;
+  font-size: 15px;
+}
+
+table td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #f0d7e8;
+  color: #15173D;
+}
+
+table tbody tr:nth-child(even) {
+  background: #F1E9E9;
+}
+
+table tbody tr:hover {
+  background: #f7dff0;
+  transition: 0.3s;
+}
+
+.edit-btn,
+.delete-btn,
+.recover-btn {
+  padding: 9px 14px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.edit-btn {
+  background: #982598;
+}
+
+.delete-btn {
+  background: #15173D;
+}
+
+.recover-btn {
+  background: #E491C9;
+  color: #15173D;
+}
+
+.edit-btn:hover,
+.delete-btn:hover,
+.recover-btn:hover {
+  transform: scale(1.06);
+  opacity: 0.95;
+}
+
+p {
+  text-align: center;
+  font-size: 17px;
+  color: #15173D;
+  padding: 12px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 94%;
+    padding: 18px;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .form input,
+  .form select,
+  .form button {
+    width: 100%;
+  }
+
+  table th,
+  table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .edit-btn,
+  .delete-btn,
+  .recover-btn {
+    margin: 4px 2px;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1E9E9;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #982598, #15173D);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #E491C9, #982598);
+}
