@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root{
+  --bg:#0b1020;
+  --card:#121a2f;
+  --card2:#1a2542;
+  --text:#f3f4f6;
+  --muted:#9ca3af;
+  --primary:#7c3aed;
+  --secondary:#06b6d4;
+  --border:rgba(255,255,255,0.08);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Inter',sans-serif;
+  background: radial-gradient(circle at top, #1d2a4d 0%, var(--bg) 45%);
+  color:var(--text);
+  min-height:100vh;
+}
+a{text-decoration:none;color:inherit}
+.container{max-width:1280px;margin:auto;padding:0 20px;}
+button,input,select{font-family:inherit}
